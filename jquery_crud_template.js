@@ -28,10 +28,7 @@ $(document).ready(function () {
       type: "GET",
       url: urlGetAll,
       data: params,
-      dataType: "json",
-      success: function (result) {},
-      error: function (result) {},
-      complete: function (result) {},
+      dataType: "json"
     });
   }
 
@@ -40,10 +37,7 @@ $(document).ready(function () {
       type: "GET",
       url: urlGet,
       data: params,
-      dataType: "json",
-      success: function (result) {},
-      error: function (result) {},
-      complete: function (result) {},
+      dataType: "json"
     });
   }
 
@@ -52,10 +46,7 @@ $(document).ready(function () {
       type: "POST",
       url: urlCreate,
       data: params,
-      dataType: "json",
-      success: function (result) {},
-      error: function (result) {},
-      complete: function (result) {},
+      dataType: "json"
     });
   }
 
@@ -64,10 +55,7 @@ $(document).ready(function () {
       type: "PUT",
       url: urlDelete,
       data: params,
-      dataType: "json",
-      success: function (result) {},
-      error: function (result) {},
-      complete: function (result) {},
+      dataType: "json"
     });
   }
 
@@ -76,10 +64,7 @@ $(document).ready(function () {
       type: "DELETE",
       url: urlUpdate,
       data: params,
-      dataType: "json",
-      success: function (result) {},
-      error: function (result) {},
-      complete: function (result) {},
+      dataType: "json"
     });
   }
   //END AJAX FUNCTIONS
