@@ -60,7 +60,7 @@ $(document).ready(function () {
   function Update(params) {
     $.ajax({
       type: "PUT",
-      url: urlDelete,
+      url: urlUpdate,
       data: params,
       dataType: "json",
     });
@@ -69,7 +69,7 @@ $(document).ready(function () {
   function Delete(params) {
     $.ajax({
       type: "DELETE",
-      url: urlUpdate,
+      url: urlDelete,
       data: params,
       dataType: "json",
     });
