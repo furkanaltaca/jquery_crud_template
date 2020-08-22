@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  //ARRANGE
+  var dataTable=$('#exampleDataTable');
+  var example=$('#example');
+  //END ARRANGE
+  //-------------------------------------------------------------------------
   //URL
   var urlGetAll = "";
   var urlGet = "";
@@ -8,7 +13,7 @@ $(document).ready(function () {
   //END URL
   //-------------------------------------------------------------------------
   //EVENT
-  $("#example").on("click", function () {
+  example.on("click", function () {
     var ajax = GetAll();
     ajax.done(function (result) {
       alert(result);
