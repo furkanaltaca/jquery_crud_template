@@ -6,29 +6,31 @@ $(document).ready(function () {
   var urlUpdate = "";
   var urlDelete = "";
   //END URL
-
+  //-------------------------------------------------------------------------
   //EVENT
   $("#example").on("click", function () {
     var ajax = GetAll();
-    ajax.done(function(result){
-        alert(result);
+    ajax.done(function (result) {
+      alert(result);
     });
-    ajax.fail(function(result){
-
-    });
-    ajax.always(function(result){
-
-    });
+    ajax.fail(function (result) {});
+    ajax.always(function (result) {});
   });
   //END EVENT
-
+  //-------------------------------------------------------------------------
+  //FUNCTIONS
+  function example(params) {
+    return params;
+  }
+  //END FUNCTIONS
+  //-------------------------------------------------------------------------
   //AJAX FUNCTIONS
   function GetAll(params = {}) {
     return $.ajax({
       type: "GET",
       url: urlGetAll,
       data: params,
-      dataType: "json"
+      dataType: "json",
     });
   }
 
@@ -37,7 +39,7 @@ $(document).ready(function () {
       type: "GET",
       url: urlGet,
       data: params,
-      dataType: "json"
+      dataType: "json",
     });
   }
 
@@ -46,7 +48,7 @@ $(document).ready(function () {
       type: "POST",
       url: urlCreate,
       data: params,
-      dataType: "json"
+      dataType: "json",
     });
   }
 
@@ -55,7 +57,7 @@ $(document).ready(function () {
       type: "PUT",
       url: urlDelete,
       data: params,
-      dataType: "json"
+      dataType: "json",
     });
   }
 
@@ -64,7 +66,7 @@ $(document).ready(function () {
       type: "DELETE",
       url: urlUpdate,
       data: params,
-      dataType: "json"
+      dataType: "json",
     });
   }
   //END AJAX FUNCTIONS
